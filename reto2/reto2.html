@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton - Semana 11 - Delegación Funciones</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <h1>HACKATON SEMANA 11 - POR EDUARDO RODRIGUEZ - RETO 2 - CALCULADORA</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Pagina principal</a></li>
+            <li><a href="../reto1/reto1.html">Reto 1 - Preguntas</a></li>
+            <li><a href="./reto2.html">Reto 2 - Calculadora</a></li>
+            <li><a href="../reto3/reto3.html">Reto 3 - TodoList</a></li>
+        </ul>
+    </nav>
+    <div id="calculadora" class="calculadora">
+        <div>
+            <p id="textoPantalla">0</p>
+        </div>
+        <div>
+            <input type="button" value="%" /><input type="button" value="Raiz" /><input type="button" value="Potencia" /><input type="button" value="1/x" />
+        </div>
+        <div>
+            <input type="button" value="CE" /><input type="button" value="C" /><input type="button" value="Retr" /><input type="button" value="/" />
+        </div>
+        <div>
+            <input type="button" value="7" /><input type="button" value="8" /><input type="button" value="9" /><input type="button" value="*" />
+        </div>
+        <div>
+            <input type="button" value="4" /><input type="button" value="5" /><input type="button" value="6" /><input type="button" value="-" />
+        </div>
+        <div>
+            <input type="button" value="1" /><input type="button" value="2" /><input type="button" value="3" /><input type="button" value="+" />
+        </div>
+        <div>
+            <input type="button" value="+/-"/><input type="button" value="0" /><input type="button" value="." /><input type="button" value="="/>
+        </div>
+        </form>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        input {
+            box-sizing: border-box;
+            margin: 0;
+            color: white;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            background-color: black;
+            height: 50px;
+            width: 100px;
+            border: 1px solid gray;
+        }
+        input:hover{
+            background-color: rgb(56, 56, 238);
+        }
+
+        .calculadora {
+            padding: 5px;
+            width: 400px;
+        }
+        .calculadora > div > p {
+            box-sizing: border-box;
+            margin: 0;
+            color: white;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2em;
+            background-color: black;
+            height: 50px;
+            width: 100px;
+            border: 1px solid gray;
+            width: 100%;
+            text-align: right;
+            text
+        }
+    </style>
+</body>
+</html>

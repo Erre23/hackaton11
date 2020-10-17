@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton - Semana 11 - Delegación Funciones</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <h1>HACKATON SEMANA 11 - POR EDUARDO RODRIGUEZ - RETO 3 - TODOLIST</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Pagina principal</a></li>
+            <li><a href="../reto1/reto1.html">Reto 1 - Preguntas</a></li>
+            <li><a href="../reto2/reto2.html">Reto 2 - Calculadora</a></li>
+            <li><a href="./reto3.html">Reto 3 - TodoList</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="input-container" class="container">
+            <h2>Ingrese una tarea</h2>
+            <input type="text" class="form-control" name="tbTarea">
+            <button type="button" class="form-control btn" name="bnAgregar">Agregar</button>
+        </div>
+        <div id="tarea-container" class="container container-list">
+            <h2>Lista de tarea</h2>
+        </div>
+    </main>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        .container {
+            margin: 5px;
+            padding: 20px;
+            border: 2px solid rgb(70, 70, 243);
+        }
+        .container > h2 {
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: rgb(62, 62, 250);
+        }
+        .container-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .list-item {
+            padding: 5px;
+        }
+        .list-item > span {
+            display: inline-block;            
+            width: 300px;
+        }
+        .form-control {
+            border: 3px solid rgb(70, 70, 243);
+            padding: 3px;
+        }
+        .btn {
+            color: white;
+            background-color:  rgb(70, 70, 243);
+            padding: 3px 5px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: lightblue;
+        }
+    </style>
+    <script src="../js/reto3.js"></script>
+</body>
+</html>

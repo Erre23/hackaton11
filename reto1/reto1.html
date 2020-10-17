@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton - Semana 11 - Delegación Funciones</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <h1>HACKATON SEMANA 11 - POR EDUARDO RODRIGUEZ - RETO 1 - PREGUNTAS</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Pagina principal</a></li>
+            <li><a href="./reto1.html">Reto 1 - Preguntas</a></li>
+            <li><a href="../reto2/reto2.html">Reto 2 - Calculadora</a></li>
+            <li><a href="../reto3/reto3.html">Reto 3 - TodoList</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>¿Por qué se crean los objetos?</h2>
+            <p>- Para modelar cosas del mundo real es decir un objeto es un molde con una estructura definida (propiedades, métodos). Un objeto puede ser creado a partir de otro
+                lo que se conoce como herencia.</p>
+        </section>
+        <section>
+            <h2>¿Qué hubiera pasado si agregaba otra propiedad?</h2>
+            <p>- Aqui entran a tallar términos como la abstracción y la herencia, la abstracción es crear un modelo de objeto lo mas simple posible apartir de algo complejo, 
+                es decir definir un modelo básico que contenga las propiedades y métodos mas comunes, luego si queremos agregar una propiedad debemos analizar si es un dato común 
+                o algo mas específico para definir si se agregará en este objeto ya existente o se crea otro modelo de objeto que herede la estructura del objeto base (propiedades y
+                métodos) y se adicione esta nueva propiedad. 
+                Ejemplo tenemos el objeto persona que tiene la siguiente estructura { nombre, edad, sexo } y luego tendriamos el objeto docente que hereda del objeto persona tendría
+                la siguiente estructura { nombre, edad, sexo, especialidad } como se ve las propiedades nombre, edad y sexo son heredados del objeto persona, y sólo la propiedad 
+                especialidad es única del objeto docente.</p>
+            <p> Persona { nombre, edad, sexo }</p>
+            <p> Docente { nombre, edad, sexo, especialidad }</p>
+            </p>
+        </section>
+        <section>
+            <h2>¿Se puede generar de otra manera algún objeto?</h2>
+            <p>- Se puede crear un objeto haciendo uso de una funcion normal en la cual se define un variable de tipo objeto vacio luego se le asignan las propiedades y el valor de sus 
+                 atributos y métodos y se retorna la variable, o podemos usar las funciones constructoras que proporciona javascript en la cual ya no es necesario declarar ni retornar 
+                 una variable de tipo objeto, sino que hacemos uso de la palabra reservada this. Hay que tener en cuenta que por convención el nombre de una función consutructora debe
+                 empezar con la primera letra en mayúscula para que sea identificada rápidamente y para hacer uso de ella se debe empezar con la palabra reservada new.</p>
+        </section>
+    </main>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        p, h2 {
+            margin: 10px 5px;
+            
+        }
+    </style>
+</body>
+</html>
